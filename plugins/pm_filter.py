@@ -1005,22 +1005,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("Meet the minds behind this bot:\n\n👨‍💻 @AMANI_JII\n\n\n❤️ A big thank you for making this bot awesome!", show_alert=True)
  
     elif query.data == "Source":
-         buttons = [[
-		 InlineKeyboardButton("☸️ Bᴀᴄᴋᴜᴘ", url="https://t.me/mslanders"),
-		 InlineKeyboardButton("🎞 Mᴏᴠɪᴇ Gʀᴏᴜᴘ", url="https://t.me/msrequest_group")
-	 ],[
-		 InlineKeyboardButton("👨‍💻 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ", url="https://t.me/mslanders_help"),
-		 InlineKeyboardButton("☎ Cᴏɴᴛᴀᴄᴛ Oᴡɴᴇʀ", url="https://t.me/mslanderstalk_bot")
-	 ],[
-		 InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='about'),
-		 InlineKeyboardButton('• ᴄʟᴏsᴇ •', callback_data='close_data')
-	 ]]
-	    reply_markup = InlineKeyboardMarkup(buttons)
-	    await query.message.edit_text(
-		    text=script.SOURCE_TXT,
-		    reply_markup=reply_markup,
-		    parse_mode=enums.ParseMode.HTML
-	    )
+        buttons = [[
+            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='about'),
+            InlineKeyboardButton('• ᴄʟᴏsᴇ •', callback_data='close_data')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.SOURCE_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+	)
 	
     elif query.data == "disclaimer":
             btn = [[
@@ -1039,7 +1033,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 	      InlineKeyboardButton('⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ⇆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
        ],[
               InlineKeyboardButton('⋞ ʜᴏᴍᴇ', callback_data='features'),
-              InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', callback_data='Source'),
+              InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/MSREQUEST_GROUP'),
        ]]
        reply_markup = InlineKeyboardMarkup(buttons)
        await client.edit_message_media(
