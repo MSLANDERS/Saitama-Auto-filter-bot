@@ -987,7 +987,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 		],[
 			InlineKeyboardButton('⋞ ʜᴏᴍᴇ', callback_data='start')]]
                 ),
-            disabe_web_page_preview = True
+            disable_web_page_preview = True
 	)
     elif query.data == "mydevelopers":
         await query.answer("Meet the minds behind this bot:\n\n👨‍💻 @AMANI_JII\n\n\n❤️ A big thank you for making this bot awesome!", show_alert=True)
