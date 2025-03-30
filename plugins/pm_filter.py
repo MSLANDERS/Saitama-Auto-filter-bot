@@ -914,8 +914,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
               InlineKeyboardButton('Aᴅᴍɪɴ Cᴏᴍᴍᴀɴᴅs', callback_data='admincmd'),
               InlineKeyboardButton('Iᴍᴀɢᴇ Tᴏ Lɪɴᴋ', callback_data='telegraph')
               ], [
-              InlineKeyboardButton('Gʀᴏᴜᴘ Sᴇᴛᴜᴘ', callback_data='earn'),
-	      InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url='https://t.me/msrequest_group')
+              InlineKeyboardButton('Gʀᴏᴜᴘ Sᴇᴛᴜᴘ', callback_data='earn')
               ], [
               InlineKeyboardButton('⋞ Back To Home', callback_data='start')
               ]]
