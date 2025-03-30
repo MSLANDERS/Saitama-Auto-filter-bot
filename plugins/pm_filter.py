@@ -912,7 +912,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "features":
         buttons = [[
               InlineKeyboardButton('Aᴅᴍɪɴ Cᴏᴍᴍᴀɴᴅs', callback_data='admincmd'),
-              InlineKeyboardButton('Iᴍᴀɢᴇ Tᴏ Lɪɴᴋ', callback_data='telegraph'),
+              InlineKeyboardButton('Iᴍᴀɢᴇ Tᴏ Lɪɴᴋ', callback_data='telegraph')
               ], [
               InlineKeyboardButton('Gʀᴏᴜᴘ Sᴇᴛᴜᴘ', callback_data='earn'),
 	      InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url='https://t.me/msrequest_group')
@@ -943,7 +943,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
       buttons = [[
 	      InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='features'),
-	      InlineKeyboardButton('ɴᴇxᴛ ⪼', callback_data='admincmd2'),
+	      InlineKeyboardButton('ɴᴇxᴛ ⪼', callback_data='admincmd2')
       ]]
       reply_markup = InlineKeyboardMarkup(buttons)
     
@@ -1021,7 +1021,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 	      InlineKeyboardButton('⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ⇆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
        ],[
               InlineKeyboardButton('⋞ ʜᴏᴍᴇ', callback_data='features'),
-              InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/MSREQUEST_GROUP'),
+              InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/MSREQUEST_GROUP')
        ]]
        reply_markup = InlineKeyboardMarkup(buttons)
        await client.edit_message_media(
