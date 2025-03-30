@@ -914,7 +914,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
               InlineKeyboardButton('Aᴅᴍɪɴ Cᴏᴍᴍᴀɴᴅs', callback_data='admincmd'),
               InlineKeyboardButton('Iᴍᴀɢᴇ Tᴏ Lɪɴᴋ', callback_data='telegraph'),
               ], [
-              InlineKeyboardButton('F-Sᴜʙ', callback_data='fsub'),
+              InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', callback_data='mychannels'),
               InlineKeyboardButton('Gʀᴏᴜᴘ Sᴇᴛᴜᴘ', callback_data='earn')
               ], [
               InlineKeyboardButton('⋞ Back To Home', callback_data='start')
@@ -974,17 +974,23 @@ async def cb_handler(client: Client, query: CallbackQuery):
           reply_markup=reply_markup
       )
 	    
-    elif query.data == "fsub":
-        #add back button
+    elif query.data == "mychannels":
         buttons = [[
-            InlineKeyboardButton('⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ⇆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')],
-            [InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='features')]]
+            InlineKeyboardButton("☸️ Bᴀᴄᴋᴜᴘ", url="https://t.me/mslanders"),
+            InlineKeyboardButton("🎞 Mᴏᴠɪᴇ Gʀᴏᴜᴘ", url="https://t.me/msrequest_group")
+        ],[
+            InlineKeyboardButton("👨‍💻 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ", url="https://t.me/mslanders_help"),
+            InlineKeyboardButton("☎ Cᴏɴᴛᴀᴄᴛ Oᴡɴᴇʀ", url="https://t.me/mslanderstalk_bot")
+        ],[
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='help'),
+            InlineKeyboardButton('➤ ᴄᴏɴᴛᴀᴄᴛ ', url=OWNER_LNK)
+        ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.FSUB_TXT,
+            text=script.MYCHANNELS_TEXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )
+	)
     
     elif query.data == 'about':
         await query.message.edit_text(
@@ -993,7 +999,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 [[
 			InlineKeyboardButton('‼️ Dɪꜱᴄʟᴀɪᴍᴇʀ ‼️', callback_data='disclaimer')
 		],[
-			InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ 🍁', callback_data='Source')
+			InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ 👨‍💻', callback_data='Source')
                 ],[
                         InlineKeyboardButton('Mʏ Dᴇᴠᴇʟᴏᴘᴇʀ 😎',callback_data='mydevelopers')
 		],[
