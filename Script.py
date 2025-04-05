@@ -307,8 +307,6 @@ User - {}"""
 --------------Verify On Off------------
 /verifyoff {{verify.off code}} - off verification <a href="https://t.me/MSLANDERSTALK_BOT">Cᴏɴᴛᴀᴄᴛ</a> ᴛʜᴇ ʙᴏᴛ ᴀᴅᴍɪɴ ғᴏʀ ᴀ ᴠᴇʀɪғʏ.ᴏғғ ᴄᴏᴅᴇ
 /verifyon - on verification 
-------------Set File Caption-----------
-/set_caption - set coustom file caption 
 -----------Set Imdb Template-----------
 /set_template - set IMDb template <a href="https://telegra.ph/HOW-TO-USE-ME-03-30">Example</a>
 --------------Set Tutorial-------------
@@ -335,9 +333,7 @@ Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ᴍᴇ ᴀ�
 /set_time_3 {seconds} Sᴇᴛ ᴛʜᴇ ᴛʜɪʀᴅ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ ᴛɪᴍᴇ
 --------------Verify On Off------------
 /verifyoff {verify.off code} - off verification <a href="https://t.me/MSLANDERSTALK_BOT">Cᴏɴᴛᴀᴄᴛ</a> ᴛʜᴇ ʙᴏᴛ ᴀᴅᴍɪɴ ғᴏʀ ᴀ ᴠᴇʀɪғʏ.ᴏғғ ᴄᴏᴅᴇ
-/verifyon - on verification 
-------------Set File Caption-----------
-/set_caption - set coustom file caption 
+/verifyon - on verification
 -----------Set Imdb Template-----------
 /set_template - set IMDb template <a href="https://telegra.ph/HOW-TO-USE-ME-03-30">Example</a>
 --------------Set Tutorial-------------
